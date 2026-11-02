@@ -4,11 +4,26 @@ Spatial and temporal video classification with ResNet50, BiLSTM, and attention.
 
 **Python · PyTorch · OpenCV · MediaPipe · ResNet50**
 
+[![Documentation checks](https://github.com/kedharkota/AI-deep-fake-detection/actions/workflows/docs.yml/badge.svg?branch=main)](https://github.com/kedharkota/AI-deep-fake-detection/actions/workflows/docs.yml)
+
 [Overview](#overview) · [Getting started](#getting-started) · [Repository guide](#repository-guide) · [Reproducibility](docs/REPRODUCIBILITY.md)
 
-![Video Deepfake Detection: project preview](docs/assets/notebook-1.png)
+<p align="center">
+  <img src="docs/assets/notebook-1.png" alt="Video Deepfake Detection: project preview" width="900" />
+</p>
+
+[Open full-size visual](docs/assets/notebook-1.png)
 
 *Original training and validation plots saved in the notebook.*
+
+## Project at a glance
+
+| Detail | Project information |
+| --- | --- |
+| **Focus** | Spatial and temporal video classification |
+| **Start here** | [advanced_resnet_lstm_deepfake.ipynb](advanced_resnet_lstm_deepfake.ipynb) |
+| **Run mode** | Jupyter notebook; external videos and trained checkpoints |
+| **Explore** | Face sequences, model architecture, training plots, and inference code |
 
 ## Overview
 
@@ -23,7 +38,11 @@ A deepfake-detection notebook that models both appearance and temporal informati
 
 ## Workflow
 
-![Project workflow](docs/assets/overview.svg)
+<p align="center">
+  <img src="docs/assets/overview.svg" alt="Project workflow" width="900" />
+</p>
+
+[Open full-size visual](docs/assets/overview.svg)
 
 *Explanatory diagram. Detailed implementation and availability notes follow below.*
 
@@ -47,7 +66,11 @@ Supply the real and manipulated video datasets expected by the configuration. Th
 
 The figures included here are original saved outputs from the committed notebook, showing training history and a confusion matrix. They describe that saved run and were not regenerated here. The notebook's '>90%' statement is a target, and these results do not establish performance on arbitrary unseen video sources.
 
-![Saved validation confusion matrix](docs/assets/notebook-2.png)
+<p align="center">
+  <img src="docs/assets/notebook-2.png" alt="Saved validation confusion matrix" width="900" />
+</p>
+
+[Open full-size visual](docs/assets/notebook-2.png)
 
 *Original notebook output. No new training run was performed.*
 
@@ -58,6 +81,9 @@ The figures included here are original saved outputs from the committed notebook
 
 ## Documentation maintenance
 
+<details>
+<summary>Run documentation checks and maintain visuals</summary>
+
 Local documentation links and image headers are checked on pull requests and relevant pushes by the [documentation workflow](.github/workflows/docs.yml). Run the same check locally:
 
 ```bash
@@ -65,6 +91,13 @@ python tools/check_docs.py
 ```
 
 See the [reproducibility guide](docs/REPRODUCIBILITY.md) for evidence, missing artifacts, and visual-source notes. The check validates documentation files; it does not train models or certify application behavior.
+
+</details>
+
+## Explore related projects
+
+- [Cardiac Ultrasound Segmentation](https://github.com/kedharkota/-Heart-Murmur-)
+- [Gesture-Controlled Drone Simulation](https://github.com/kedharkota/Gesture-Controlled-Drone-)
 
 ---
 
